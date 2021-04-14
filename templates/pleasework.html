@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HEALTHNOMIC-EARLY PREDICTOR</title> 
+	<link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/carousel/#">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href="D:\Desktop\project\bootstrap-5.0.0-beta3-dist\css\bootstrap.min.css" rel="stylesheet">
+    <link href="D:\Desktop\project\carousel.css" rel="stylesheet">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=_w9sR8wAAp5oe2H85Ka1WiGGeg5Q8KtIkxvLSVdNqEhRKpppfPovel-OtPj5H8_FCrZth3VYfL6avD4sbNMnT6FGIp01IggXcM49NPDCqMHpYyZ6NOt8o1DCMRYUcQQbaWKdFxSzxoB87Cn3a4Ersi4xGoeLRcOhvl-hfo9Kkg_aUdWDVsqv67v8tHfv4oVZSFignNj3Ioqi0gXCfuYkTNxOHj6mQxbreQlDWwmEtRxGtEXhjvKgFcF7UySu2qeCZDn3ulFgSCrLLBur1xk9kQRkFl1scY4XF8UUY-EZjlQYSoaq29Hm23oYwuURitRbaKsqzrxLp7jNrDAnEsMOsWjyFhDRyD9_AXTNUbkC2tvPNOoFgcdrtGDE5XrNTiWITj2iwvZZ0RjGKYOvUVyZS8gELgXDbGtwVe8Lv4H9hp5P4AaYn8D0YGNAXFcD0WQ61iKxHp54vdSHTVfG-O4XQ7CjNgUB9RmbKnaVjsjmfZZFbMtE27EUGvXA11CYXAteYreWkBcYvc6dOR-PlKTkMqk0YudbPsFUF0AYipM5CKttx_vrrwe7fJhnW-ln0lyuo3bok0h9vzGBaqWEvGUIasYEbSbOzCLeJdnrJn37vWqWWwb4NmskfAD7rrJcTbjp6L4hxCpRwm1h51N39u2DbPbDSRbaS0FNKtXqN0okS_4tcFkrDcOJbe5jcDeFH4p5-OnSlcZYpHrVy65qO8smJTdWJiir1vyioecIXiujEptZqx3La0o1zWofL9XMwrwUwEAJzddu4OVpXZTvLV3zGxVnUEY3daSZeU3Q1kg7d_aXl-qVKOUSg1I9j7GVjJtrAa1eDdC0tyunvX_wMWLi6MbEIa9a5QlsJD8UUAfEQpfgy41g2gpxDmtiPqK5UrskEvu4wbml7WTpddkGFpww5xILsArKoVAMfieiB4SchUp61R1NKBAna1o8dZxRpKs65c1ieDACMy9bUVLqzkMPMYYXDIsg-3PuxB_8j9xDYVjqoXw_bDdpfKNf-2slpmbeP-s6aVb89Kru9oPNobTgeT9O2atCModl5yvtJtB9WrhvJCSwwSwoeD0M2kzIoxgTEiIG9og5IyhdwtSNY1Ioa6gph6wN04q2fSiOlVlUFfvtGDS6aBXSTc5AKcmOfCg0fyvnswwwD7L2K8wAz4a-M2DimOzDtPsoh3XDZB1fc1AzB8PUokm9vWMeFHJEt_J2Qi6sWDASytS3Mi06vi7JAg" nonce="36995eda708e204792f32146415e1c88" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9tYWlsLWF0dGFjaG1lbnQuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2F0dGFjaG1lbnQvdS8wLz91aT0yJmlrPTMyYWM2MzUwOGEmYXR0aWQ9MC4xJnBlcm1tc2dpZD1tc2ctZjoxNjk2OTMwNDU5ODA4OTM3MTk3JnRoPTE3OGNiNTQzMzE3M2I0ZWQmdmlldz1hdHQmZGlzcD1zYWZlJnJlYWxhdHRpZD1mX2tuZzFhbnBrMCZzYWRkYmF0PUFOR2pkSi04cUp3OXUyYi1NTUI2cWtMVjl4T3pmSUhvT0c3cWRPZElVZkZBc1dUb3BFQzVpUW1rdkFFSl90YzN2d2pVRXk1cFdkcVg0aVdod3YxODFrMW1vVzItU3RFY2Q0QTV0Nm9ldEFaTFBONmFvOUx0cWxXVGYtZHhkSHpkTmRfOFRVX202akJVWEhvc0hDTlZncEthSWtXazdVRzBMSHdwYzRaUUZoOGx6bm02QmJGSVlralpGSVZpbmZSTk1ETXFKYUU0ZDFCbHVJMnRGbjhKWHItc0NTRVo3b1MzMkdvX1JSNE1sVXAwbkZzNUtwSDN2UUZpUTNESVBLMy1zR1lpX2lWaVVXY3E4NXNwNHZodVRXd1M0c2ZzMDBHaldmSGxtdmlEempjSXRfaGVRbFo1d0hkejlCcHJSR3lOeUl0c1YxSE1TUEFOenUydjRGRzlVQ1otMXZZRzd5UmwxV3d5eTEzcW50UGx4YjdUYVBJVEpoNGxyOXVZMUFTQW1jLVFEVWYwSXRlZlpqa25WMk16UWJDM0x2emJzZmphZHNTN0VfWTJqaVgtQVlxdlN1WkNLYnR3c1hNQnBjOG5aNEhQajFfVjUyRjB6NGVJUzdEclZNbzBCTG5mZURVcWlaWHh4emZsUjBXTVBLdVIwYUpZUW1tZ2xNamFNYjN4RV9KZXRBU0FuaGxXVlZkdkQxSHY0VHZSMmNhY0xfNkxHQTF2TEV0aG9QWXRmck93WVNteDA2MmRITmdicnhxLXNwNjYtX3hxZ052dEpHS2hBTXFnVlZ4TjVlUk54Wm1YR05TWVhITFVQekhPdURhX3JQYlNGYUhrM3l1eVNqZGlHZnBhRU5TMVFqOFNKSmk0alZkZ2gyNDZkOGFHbm54S25BcVRFRU8xNFVaVkx6cFQ5RWtQT0QzdENNclM5bUU"/><style>
+        demo{
+            border: 1px black;
+        }
+        h1{
+            text-align: center;
+			color: black;
+			
+        }
+        p
+        {
+            text-align: center;			  
+        }
+        div {
+			text-align: center;
+			padding-top: 50px;
+  			padding-right: 30px;
+  			padding-bottom: 50px;
+  			padding-left: 80px;
+		}
+        body
+		{
+			background-repeat: no-repeat; 
+  			background-attachment: fixed;
+  			background-size: cover
+		}
+		
+    </style>
+</head>
+<body>
+    <h1>
+        <b>HEALTHNOMIC-EARLY PREDICTOR</b>
+
+    </h1> 
+    <hr>
+    <p>
+
+                                <div class="container py-5" id="featured-3">
+                                    <div class="row g-5 py-5">
+                                      <div class="feature col-md-4">
+                                        <div class="feature-icon bg-primary bg-gradient">
+                                          <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
+                                          <i class="fas fa-female"></i>
+                                        </div>
+                                        <h2>PCOS</h2>
+                                        <p>A condition that affects a woman's hormone levels. Women with PCOS produce higher-than-normal amounts of male hormones. This hormone imbalance causes them to skip menstrual periods and makes it harder for them to get pregnant </p>
+                                        <a href="https://ananavya.herokuapp.com/" class="icon-link">
+                                          Check if you will have PCOS
+                                          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+                                        </a>
+                                      </div>
+                                      <div class="feature col-md-4">
+                                        <div class="feature-icon bg-primary bg-gradient">
+                                          <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+                                        </div>
+                                        <h2>Depression</h2>
+                                        <p>A mental health disorder characterised by persistently depressed mood or loss of interest in activities, causing significant impairment in daily life.</p>
+                                        <a href="https://depressedalways.herokuapp.com/" class="icon-link">
+                                          Check if you will have Depression
+                                          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+                                        </a>
+                                      </div>
+                                      <div class="feature col-md-4">
+                                        <div class="feature-icon bg-primary bg-gradient">
+                                          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+                                        </div>
+                                        <h2>Asthma</h2>
+                                        <p>A condition in which a person's airways become inflamed, narrow and swell and produce extra mucus, which makes it difficult to breathe.</p>
+                                        <a href="https://stinkyasthma.herokuapp.com/" class="icon-link">
+                                          Check if you will have Asthma
+                                          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="container py-5" id="featured-3">
+                                  <div class="row g-5 py-5">
+                                    <div class="feature col-md-4">
+                                      <div class="feature-icon bg-primary bg-gradient">
+                                        <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
+                                        <i class="fas fa-female"></i>
+                                      </div>
+                                      <h2>Lung Cancer</h2>
+                                      <p>A condition where the person has  abnormal cells that cluster together to form a tumor. Unlike normal cells, cancer cells grow without order or control, destroying the healthy lung tissue around them </p>
+                                      <a href="https://lung23.herokuapp.com/" class="icon-link">
+                                        Check if you will have Lung Cancer
+                                        <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+                                      </a>
+                                    </div>
+                                    <div class="feature col-md-4">
+                                      <div class="feature-icon bg-primary bg-gradient">
+                                        <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+                                      </div>
+                                      <h2>Breast Cancer </h2>
+                                      <p>A condition in which  in which cells in the breast grow out of control. There are different kinds of breast cancer. The kind of breast cancer depends on which cells in the breast turn into cancer. Breast cancer can begin in different parts of the breast.</p>
+                                      <a href="https://cancerbreast.herokuapp.com/" class="icon-link">
+                                        Check if you will have Breast Cancer 
+                                        <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+                                      </a>
+                                    </div>
+                                    <div class="feature col-md-4">
+                                      <div class="feature-icon bg-primary bg-gradient">
+                                        <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+                                      </div>
+                                      <h2>Liver Cirrhosis</h2>
+                                      <p>A condition in which ate-stage liver disease in which healthy liver tissue is replaced with scar tissue and the liver is permanently damaged. Scar tissue keeps your liver from working properly.</p>
+                                      <a href="https://livercirrhosis.herokuapp.com/" class="icon-link">
+                                        Check if you will have Liver Cirrhosis
+                                        <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+                                      </a>
+                                    </div>
+                                  </div>
+                                  </div>
+                                  </div>
+                                  
+                                  <div class="container py-5" id="featured-3">
+                                    <div class="row g-5 py-5">
+                                      <div class="feature col-md-4">
+                                        <div class="feature-icon bg-primary bg-gradient">
+                                          <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
+                                          <i class="fas fa-female"></i>
+                                        </div>
+                                        <h2>Heart Disorders</h2>
+                                        <p> A condition that develops when the arteries of the heart cannot deliver enough oxygen-rich blood to the heart</p>
+                                        <a href="https://hearrtt.herokuapp.com/'" class="icon-link">
+                                          Check if you will have Heart Disease
+                                          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+                                        </a>
+                                      </div>
+                                      <div class="feature col-md-4">
+                                        <div class="feature-icon bg-primary bg-gradient">
+                                          <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+                                        </div>
+                                        <h2>Diabetes</h2>
+                                        <p>A condition which is a group of metabolic disorders characterized by a high blood sugar level over a prolonged period of time. Symptoms often include frequent urination, increased thirst and increased appetite</p>
+                                        <a href="https://diabetesprediction21-api.herokuapp.com/" class="icon-link">
+                                          Check if you will have Diabetes
+                                          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+                                        </a>
+                                      </div>
+                                      <div class="feature col-md-4">
+                                        <div class="feature-icon bg-primary bg-gradient">
+                                          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+                                        </div>
+                                        <h2>Parkinsons</h2>
+                                        <p> A condition which is a brain disorder that leads to shaking, stiffness, and difficulty with walking, balance, and coordination. Parkinson's symptoms usually begin gradually and get worse over time. As the disease progresses, people may have difficulty walking and talking</p>
+                                        <a href="https://stinkyasthma.herokuapp.com/" class="icon-link">
+                                          Check if you will have Parkinsons
+                                          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+                                        </a>
+                                      </div>
+                                    </div>
+                                    </div>
+                                    </div>    
+
+							<!-- Bootstrap core JavaScript
+							================================================== -->
+							<!-- Placed at the end of the document so the pages load faster -->
+							<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+							<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+							<script src="../static/js/vendor/popper.min.js"></script>
+							<script src="../static/js/bootstrap.min.js"></script>
+							<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+							<script src="../static/js/holder.min.js"></script>
+						</body>
+					</html>
+</body>
+</html>
+
